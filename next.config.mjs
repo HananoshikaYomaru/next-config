@@ -1,9 +1,7 @@
-import { nextEnv } from "./src/env.mjs";
+// build time validation
+import "./src/env.mjs";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  publicRuntimeConfig: nextEnv.publicRuntimeConfig,
-  serverRuntimeConfig: nextEnv.serverRuntimeConfig,
-};
+const nextConfig = {};
 
 export default nextConfig;

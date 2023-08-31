@@ -1,8 +1,12 @@
 import { publicProcedure, router } from "./trpc";
-import { env } from "./env.mjs";
+import { serverConfig } from "./serverConfig";
+import { publicConfig } from "./publicConfig";
 export const appRouter = router({
   id: publicProcedure.query(async () => {
-    return env.SECRET;
+    return {
+      id: publicConfig.id,
+      secret: serverConfig.secret,
+    };
   }),
 });
 

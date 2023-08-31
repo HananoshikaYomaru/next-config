@@ -1,5 +1,5 @@
-import { publicConfig } from "@/publicConfig";
-import { serverConfig } from "@/serverConfig";
+import { publicConfig } from "@/publicConfig.mjs";
+import { serverConfig } from "@/serverConfig.mjs";
 
 export default function Home() {
   return (

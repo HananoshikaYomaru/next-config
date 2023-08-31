@@ -1,5 +1,5 @@
 import { trpc } from "@/util";
-import { publicConfig } from "@/publicConfig";
+import { publicConfig } from "@/publicConfig.mjs";
 // import { serverConfig } from "@/serverConfig";
 
 export default function About() {

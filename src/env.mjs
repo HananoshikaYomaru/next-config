@@ -29,12 +29,3 @@ export const env = createEnv({
     SECRET: "test secret",
   },
 });
-
-export const nextEnv = {
-  publicRuntimeConfig: {
-    id: env.NEXT_PUBLIC_ID,
-  },
-  serverRuntimeConfig: {
-    secret: env.SECRET,
-  },
-};

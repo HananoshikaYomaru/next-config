@@ -1,8 +1,8 @@
 import { publicProcedure, router } from "./trpc";
-
+import { env } from "./env.mjs";
 export const appRouter = router({
   id: publicProcedure.query(async () => {
-    return "this is the id of the project";
+    return env.SECRET;
   }),
 });
 

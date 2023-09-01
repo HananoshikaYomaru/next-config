@@ -11,7 +11,7 @@ export default function About() {
 
   return (
     <div>
-      <div>About: {JSON.stringify(data)}</div>
+      <div className="text-red-500">About: {JSON.stringify(data)}</div>
       <div>{publicConfig.id}</div>
       {/* <div>{serverConfig.secret} </div> */}
     </div>

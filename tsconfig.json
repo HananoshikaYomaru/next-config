@@ -28,7 +28,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/serverConfig.mjs",
-    "src/publicConfig.mjs"
+    "src/publicConfig.mjs",
+    "src/middleware.ts"
   ],
   "exclude": ["node_modules"]
 }
